@@ -6,7 +6,9 @@ Write SD CARD boot System Linux in board BananaPi, updates, softwares, configura
 > Manual PDF
 http://mirror.lemaker.org/Banana%20Pro%20&%20Pi%20User%20Manual-V1.0.pdf
 
-> Download image V1412 for BananaPro from 
+> Download image Raspbian For BananaPro V1412
+
+![img0.png](http://www.lemaker.org/Public/uploads/file/2015/1020/5625a399abfe4.png)
 
 http://www.lemaker.org/product-bananapro-download-16.html or https://drive.google.com/file/d/0B38hUt6ypQXDRDNZek54MncxWWM/view?usp=sharing
 
