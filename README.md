@@ -14,17 +14,17 @@ http://www.lemaker.org/product-bananapro-download-16.html or https://drive.googl
 
 # INSTALL IMAGE RASPBIAN IN TO SD CARD
 
-> On WSL (Windows Subsistem linux)
-```
-
-```
-
 > On Linux
 ```
 fdisk -l
 dd if=/media/images/Raspbian_For_BananaPro_v1412.img of=/dev/sdb bs=1M && syn
 
 ```
+> On Windows 10
+Download https://sourceforge.net/projects/win32diskimager/
+
+![img0.png](https://a.fsdn.com/con/app/proj/win32diskimager/screenshots/Win32DiskImager-1.0.png/max/max/1)
+
 
 
 
