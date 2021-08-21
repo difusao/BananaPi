@@ -28,12 +28,27 @@ Download https://sourceforge.net/projects/win32diskimager/
 # Sessions config
 
 > Wifi
-- [README_wifi.md](README_wifi.md)
+- [x] [README_wifi.md](README_wifi.md)
 
 > Packages
-- [README_packages.md](README_packages.md)
+- [x] [README_packages.md](README_packages.md)
 
-> SAMBA
-- [README_samba.md](README_samba.md)
+> SAMBA Server
+- [x] [README_samba.md](README_samba.md)
+
+> Tightvncserver
+- [ ] [README_tightvncserver.md](README_tightvncserver.md)
+
+> DHCP Server
+- [ ] [README_dhcpd.md](README_dhcpd.md)
+
+> DNS Server
+- [ ] [README_find.md](README_find.md)
+
+> Firewall
+- [ ] [README_firewall.md](README_firewall.md)
+
+> PiHole
+- [ ] [README_pihole.md](README_pihole.md)
 
 
