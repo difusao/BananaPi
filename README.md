@@ -83,11 +83,24 @@ apt-get install -y python-pip
 
 Share folders and files in to the network with workstations windows.
 
+> Make folder `public` in to the user space.
+```
+mkdir /home/bananapi/public
+```
+> Set permission on folder.
+```
+chown -R bananapi /home/bananapi/public
+chgrp -R pi /home/bananapi/public
+```
+> Set password for user `bananapi`.
+```
+smbpasswd -a bananapi
+```
 > Backup default config SAMBA.
 ```
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bkp
 ```
-> Edit config `nano /etc/samba/smb.conf` and insert content.
+> Edit config `nano /etc/samba/smb.conf`, insert content and save.
 ```
 [public]
     path = /home/bananapi/public
@@ -99,6 +112,12 @@ mv /etc/samba/smb.conf /etc/samba/smb.conf.bkp
     directory mask = 0777
     create mask = 0777
 ```
+> Restart service SAMBA.
+```
+service samba stop
+service samba start
+```
+
 
 
 
