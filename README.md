@@ -26,7 +26,10 @@ Download https://sourceforge.net/projects/win32diskimager/
 ![img0.png](https://a.fsdn.com/con/app/proj/win32diskimager/screenshots/Win32DiskImager-1.0.png/max/max/1)
 
 # Config wifi
-> Wifi
+> Wifi 
+
+http://wiki.lemaker.org/BananaPro/Pi:WiFi_configuration
+
 ```
 ifconfig
 ```
