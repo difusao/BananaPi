@@ -25,6 +25,27 @@ Download https://sourceforge.net/projects/win32diskimager/
 
 ![img0.png](https://a.fsdn.com/con/app/proj/win32diskimager/screenshots/Win32DiskImager-1.0.png/max/max/1)
 
+# Setups
+> Wifi
+```
+ifconfig
+```
+
+if not show `wlan0` execute command in terminal:
+```
+sudo modprobe ap6210
+```
+> Edit Wifi config in `cat /etc/wpa_supplicant/wpa_supplicant.conf` and add your access.
+```
+network={
+        ssid="Mozilla"
+        psk="2114452Mg@"
+        proto=RSN
+        key_mgmt=WPA-PSK
+        pairwise=CCMP
+        auth_alg=OPEN
+}
+```
 
 
 
