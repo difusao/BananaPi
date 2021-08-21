@@ -16,8 +16,8 @@ http://www.lemaker.org/product-bananapro-download-16.html or https://drive.googl
 
 > On Linux
 ```
-fdisk -l
-dd if=/media/images/Raspbian_For_BananaPro_v1412.img of=/dev/sdb bs=1M && syn
+sudo fdisk -l
+sudo dd if=/media/images/Raspbian_For_BananaPro_v1412.img of=/dev/sdb bs=1M && syn
 
 ```
 > On Windows 10
@@ -31,13 +31,16 @@ Download https://sourceforge.net/projects/win32diskimager/
 http://wiki.lemaker.org/BananaPro/Pi:WiFi_configuration
 
 ```
-ifconfig
+sudo ifconfig
 ```
 
 if not show `wlan0` execute command in terminal:
 ```
 sudo modprobe ap6210
 ```
+Or edit file `/etc/modules` and insert line `ap6210`
+
+
 > Edit Wifi config in `cat /etc/wpa_supplicant/wpa_supplicant.conf` and add your access.
 ```
 network={
@@ -49,6 +52,33 @@ network={
         auth_alg=OPEN
 }
 ```
+
+# Update packages
+> update with command in terminal
+```
+sudo apt-get update
+```
+If fail update with message `Err http://mirrordirector.raspbian.org wheezy/rpi armhf Packages`:
+```
+sudo nano /etc/apt/sources.list
+```
+Replace `mirrordirector` to `legacy`
+```
+deb http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi
+```
+```
+deb http://legacy.raspbian.org/raspbian/ wheezy main contrib non-free rpi
+```
+In sequence install packages basics
+```
+sudo apt-get update -y
+sudo apt-get install -y mc
+sudo apt-get install -y samba
+sudo apt-get install -y samba-common-bin
+apt-get install -y tightvncserver
+apt-get install -y python-pip
+```
+
 
 
 
