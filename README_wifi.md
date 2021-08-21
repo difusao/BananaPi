@@ -17,8 +17,8 @@ Or edit file `/etc/modules` and insert line `ap6210`
 > Edit Wifi config in `cat /etc/wpa_supplicant/wpa_supplicant.conf` and add your access.
 ```
 network={
-        ssid="Mozilla"
-        psk="yourpasswd"
+        ssid="WifiName"
+        psk="WifiPassword"
         proto=RSN
         key_mgmt=WPA-PSK
         pairwise=CCMP
