@@ -1,4 +1,4 @@
-## Config wifi and Network
+## Config wifi Network and ethernet adapter
 > Wifi 
 
 http://wiki.lemaker.org/BananaPro/Pi:WiFi_configuration
@@ -28,7 +28,8 @@ network={
 ```
 > Wifi with address IP fixed
 Edit file `/etc/network/interfaces`
-DHCP
+
+IP DYNAMIC (DHCP)
 ```
 auto lo
 
@@ -41,7 +42,7 @@ wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
 
 iface default inet dhcp
 ```
-IP FIXED
+IP STATIC
 ```
 auto lo
 
