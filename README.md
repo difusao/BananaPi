@@ -25,8 +25,15 @@ Download https://sourceforge.net/projects/win32diskimager/
 
 ![img0.png](https://a.fsdn.com/con/app/proj/win32diskimager/screenshots/Win32DiskImager-1.0.png/max/max/1)
 
+# Sessions config
 
+> Wifi
+- [README_wifi.md](README_wifi.md)
 
+> Packages
+- [README_packages.md](README_packages.md)
 
+> SAMBA
+- [README_samba.md](README_samba.md)
 
 
