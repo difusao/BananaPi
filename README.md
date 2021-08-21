@@ -25,7 +25,7 @@ Download https://sourceforge.net/projects/win32diskimager/
 
 ![img0.png](https://a.fsdn.com/con/app/proj/win32diskimager/screenshots/Win32DiskImager-1.0.png/max/max/1)
 
-# Setups
+# Config wifi
 > Wifi
 ```
 ifconfig
@@ -39,13 +39,15 @@ sudo modprobe ap6210
 ```
 network={
         ssid="Mozilla"
-        psk="2114452Mg@"
+        psk="yourpasswd"
         proto=RSN
         key_mgmt=WPA-PSK
         pairwise=CCMP
         auth_alg=OPEN
 }
 ```
+
+
 
 
 
