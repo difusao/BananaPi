@@ -58,18 +58,18 @@ network={
 ```
 sudo apt-get update
 ```
-If fail update with message `Err http://mirrordirector.raspbian.org wheezy/rpi armhf Packages`:
+> If fail update with message `Err http://mirrordirector.raspbian.org wheezy/rpi armhf Packages`:
 ```
 sudo nano /etc/apt/sources.list
 ```
-Replace `mirrordirector` to `legacy`
+> Replace `mirrordirector` to `legacy`
 ```
 deb http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi
 ```
 ```
 deb http://legacy.raspbian.org/raspbian/ wheezy main contrib non-free rpi
 ```
-In sequence install packages basics
+> In sequence install packages basics
 ```
 sudo apt-get update -y
 sudo apt-get install -y mc
@@ -77,6 +77,27 @@ sudo apt-get install -y samba
 sudo apt-get install -y samba-common-bin
 apt-get install -y tightvncserver
 apt-get install -y python-pip
+```
+
+# Config SAMBA
+
+Share folders and files in to the network with workstations windows.
+
+> Backup default config SAMBA.
+```
+mv /etc/samba/smb.conf /etc/samba/smb.conf.bkp
+```
+> Edit config `nano /etc/samba/smb.conf` and insert content.
+```
+[public]
+    path = /home/bananapi/public
+    valid users = bananapi
+    browsable = yes
+    writable = yes
+    guest ok = yes
+    read only = no
+    directory mask = 0777
+    create mask = 0777
 ```
 
 
