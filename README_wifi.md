@@ -1,4 +1,4 @@
-## Config wifi
+## Config wifi and Network
 > Wifi 
 
 http://wiki.lemaker.org/BananaPro/Pi:WiFi_configuration
@@ -24,4 +24,23 @@ network={
         pairwise=CCMP
         auth_alg=OPEN
 }
+```
+> Wifi with address IP fixed
+Edit file `/etc/network/interfaces`
+DHCP
+```
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+
+iface default inet dhcp
+```
+IP FIXED
+```
+
 ```
