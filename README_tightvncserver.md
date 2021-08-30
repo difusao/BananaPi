@@ -65,10 +65,24 @@ Set start service on initialization system.
 ```
 sudo update-rc.d vncserver defaults
 ```
-or exec with user `bananapi`.
+Run service with user `bananapi`.
 ```
-su bananapi -c 'vncserver'
+root@lemaker:~# su bananapi -c 'vncserver'
+
+You will require a password to access your desktops.
+
+Password: *******
+Verify: *******
+Would you like to enter a view-only password (y/n)? n
+
+New 'X' desktop is lemaker:1
+
+Creating default startup script /home/bananapi/.vnc/xstartup
+Starting applications specified in /home/bananapi/.vnc/xstartup
+Log file is /home/bananapi/.vnc/lemaker:1.log
+
 ```
+
 > 
 > Optionaly
 Disable `lightdm` for most perfomance.
