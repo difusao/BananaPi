@@ -37,7 +37,7 @@ Download https://sourceforge.net/projects/win32diskimager/
 - [x] [README_samba.md](README_samba.md)
 
 > Tightvncserver
-- [ ] [README_tightvncserver.md](README_tightvncserver.md)
+- [x] [README_tightvncserver.md](README_tightvncserver.md)
 
 > DHCP Server
 - [ ] [README_dhcpd.md](README_dhcpd.md)
