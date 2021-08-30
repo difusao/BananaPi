@@ -21,6 +21,6 @@ sudo apt-get update -y
 sudo apt-get install -y mc
 sudo apt-get install -y samba
 sudo apt-get install -y samba-common-bin
-apt-get install -y tightvncserver
-apt-get install -y python-pip
+sudo apt-get install -y tightvncserver
+sudo apt-get install -y python-pip
 ```
