@@ -84,7 +84,7 @@ Log file is /home/bananapi/.vnc/lemaker:1.log
 ```
 
 > 
-> Optionaly
+> Optional config
 Disable `lightdm` for most perfomance.
 ```
 sudo update-rc.d -f lightdm disable
